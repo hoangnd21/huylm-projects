@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Northline Portfolio</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/portfolio.css">
+</head>
+<body>
+ <div id="header-container"></div>
+<header class="hero">
+ 
+  <h1>Northline Bistro</h1>
+  <p>Seasonal dining. Crafted moments.</p>
+
+</header>
+
+<main>
+<section class="story fade-up">
+  <div class="text">
+    <h2>Our Story</h2>
+    <p>
+      A modern bistro rooted in seasonal ingredients and warm hospitality.
+    </p>
+  </div>
+  <img src="../assets/restaurant.jpg">
+</section>
+
+<div class="filter">
+  <button onclick="filterDish('all')">All</button>
+  <button onclick="filterDish('meat')">Meat</button>
+  <button onclick="filterDish('sea')">Seafood</button>
+  <button onclick="filterDish('vegetable')">Vegetable</button>
+</div>
+<section>
+  <h2 class="section-title">Signature Dishes</h2>
+
+  <div class="slider">
+    <button class="nav-btn left" onclick="slideLeft()">❮</button>
+
+    <div class="slider-track" id="sliderTrack">
+
+      <div class="card fade-up" data-type="meat" onclick="openPopup('steak')">
+        <img src="../assets/steak.jpg">
+        <h3>Grilled Ribeye</h3>
+      </div>
+
+      <div class="card fade-up" data-type="sea" onclick="openPopup('shrimp')">
+        <img src="../assets/shrimp.jpg">
+        <h3>Garlic Shrimp</h3>
+      </div>
+
+      <div class="card fade-up" data-type="sea" onclick="openPopup('fish')">
+        <img src="../assets/fish.jpg">
+        <h3>Roasted Fish</h3>
+      </div>
+
+      <div class="card fade-up" data-type="meat" onclick="openPopup('pork')">
+        <img src="../assets/pork.jpg">
+        <h3>Pork Chop</h3>
+      </div>
+
+       <div class="card fade-up" data-type="vegetable" onclick="openPopup('salad')">
+        <img src="../assets/salad.jpg">
+        <h3>Salad</h3>
+      </div>
+  </div>
+
+    <button class="nav-btn right" onclick="slideRight()">❯</button>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Atmosphere</h2>
+  <div class="gallery">
+    <img src="../assets/restaurant.jpg">
+    <img src="../assets/steak.jpg">
+    <img src="../assets/shrimp.jpg">
+  </div>
+</section>
+
+</main>
+
+<div id="popup" class="popup" onclick="outsideClick(event)">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <img id="popup-img">
+    <h3 id="popup-title"></h3>
+    <p id="popup-desc"></p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Northline Bistro</p>
+</footer>
+<script src="../js/header.js"></script>
+<script src="../js/portfolio.js"></script>
+</body>
+</html>

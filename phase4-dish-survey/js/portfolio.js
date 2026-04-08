@@ -1,4 +1,3 @@
-/* POPUP DATA */
 const dishes = {
   steak: {
     img: "../assets/steak.jpg",
@@ -28,7 +27,6 @@ const dishes = {
   }
 };
 
-/* POPUP */
 function openPopup(key) {
   const dish = dishes[key];
   document.getElementById("popup").classList.add("show");
@@ -46,7 +44,6 @@ function outsideClick(e) {
   if (e.target.id === "popup") closePopup();
 }
 
-/* FILTER */
 function filterDish(type) {
   document.querySelectorAll(".card").forEach(card => {
     card.style.display =
@@ -56,12 +53,10 @@ function filterDish(type) {
   });
 }
 
-/* DARK MODE */
 function toggleDark() {
   document.body.classList.toggle("dark");
 }
 
-/* SLIDER LOOP */
 let pos = 0;
 const max = 2;
 
