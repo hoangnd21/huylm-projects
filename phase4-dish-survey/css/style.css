@@ -162,3 +162,53 @@ nav a:hover {
 }
 
 
+/* ===== HEADER ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+  background: linear-gradient(45deg, var(--accent), #f97316);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+#themeToggle {
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ===== DARK MODE ===== */
+.dark {
+  background: #111;
+  color: white;
+}
+
+.dark .site-header {
+  background: #1f2937;
+}
+
+.dark a {
+  color: #ddd;
+}
