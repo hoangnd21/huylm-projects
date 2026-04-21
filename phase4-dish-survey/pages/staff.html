@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Tracker</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/staff.css">
+</head>
+
+<body>
+ 
+<div id="header-container"></div>
+<div class="container">
+  <h1>🍽 Employee & Task Tracker</h1>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Add Employee</h3>
+      <input id="empName" placeholder="Name">
+      <select id="role">
+        <option value="FOH">FOH (Front)</option>
+        <option value="BOH">BOH (Kitchen)</option>
+      </select>
+      <button id="addEmpBtn">Add Employee</button>
+
+      <h3>Roster</h3>
+      <ul id="employeeList"></ul>
+    </div>
+
+    <div class="card">
+      <h3>Assign Task</h3>
+      <select id="assignTo"></select>
+      <input id="taskInput" placeholder="Task (e.g. Prep salad)">
+      <button id="assignBtn">Assign Task</button>
+
+      <h3>Tasks</h3>
+      <ul id="taskList"></ul>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="../js/header.js"></script>
+<script src="../js/staff.js"></script>
+
+</body>
+</html>
