@@ -130,15 +130,18 @@ tr:hover {
 
 .stat h2 {
   margin-top: 10px;
+  color: var(--text);
 }
 
 /* PROFIT */
 .highlight {
   background: var(--accent);
   color: white;
+  color: var(--text);
 }
 
 .highlight h2 {
   color: white;
+  color: var(--text);
 }
 
