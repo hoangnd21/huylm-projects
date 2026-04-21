@@ -8,28 +8,15 @@
   <link rel="stylesheet" href="../css/portfolio.css">
 </head>
 <body>
-
+ <div id="header-container"></div>
 <header class="hero">
- <nav>
-  <a href="../index.html">Home</a>
-  <a href="menu.html">Menu</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
- <a href="portfolio.html">Portfolio</a>
-  <a href="quiz.html">Quiz</a>
-  <a href="finance.html">Finance</a>
-  <a href="weather.html">Weather</a>
-  <a href="staff.html">Staff</a>
-</nav>
+ 
   <h1>Northline Bistro</h1>
   <p>Seasonal dining. Crafted moments.</p>
 
-  <button class="dark-btn" onclick="toggleDark()">🌙</button>
 </header>
 
 <main>
-
-<!-- STORY -->
 <section class="story fade-up">
   <div class="text">
     <h2>Our Story</h2>
@@ -40,15 +27,12 @@
   <img src="../assets/restaurant.jpg">
 </section>
 
-<!-- FILTER -->
 <div class="filter">
   <button onclick="filterDish('all')">All</button>
   <button onclick="filterDish('meat')">Meat</button>
   <button onclick="filterDish('sea')">Seafood</button>
   <button onclick="filterDish('vegetable')">Vegetable</button>
 </div>
-
-<!-- SLIDER -->
 <section>
   <h2 class="section-title">Signature Dishes</h2>
 
@@ -81,15 +65,12 @@
         <img src="../assets/salad.jpg">
         <h3>Salad</h3>
       </div>
-
-
-    </div>
+  </div>
 
     <button class="nav-btn right" onclick="slideRight()">❯</button>
   </div>
 </section>
 
-<!-- GALLERY -->
 <section>
   <h2 class="section-title">Atmosphere</h2>
   <div class="gallery">
@@ -101,7 +82,6 @@
 
 </main>
 
-<!-- POPUP -->
 <div id="popup" class="popup" onclick="outsideClick(event)">
   <div class="popup-content">
     <span class="close" onclick="closePopup()">&times;</span>
@@ -114,7 +94,7 @@
 <footer>
   <p>© 2026 Northline Bistro</p>
 </footer>
-
+<script src="../js/header.js"></script>
 <script src="../js/portfolio.js"></script>
 </body>
 </html>

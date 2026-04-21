@@ -74,7 +74,6 @@ function slideLeft() {
     `translateX(${pos * 280}px)`;
 }
 
-/* SCROLL ANIMATION */
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) e.target.classList.add("show");
