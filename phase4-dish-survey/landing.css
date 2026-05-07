@@ -1,0 +1,259 @@
+/* ===== BASE ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+/* ===== HERO ===== */
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../assets/restaurant.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+/* NAV */
+.hero nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.hero nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero nav a:hover {
+  opacity: 0.7;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  margin: 15px 0;
+  color: #e5e7eb;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #c2410c;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #9a3412;
+  transform: scale(1.05);
+}
+
+/* ===== SECTION ===== */
+.section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* ===== SPLIT ===== */
+.split {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.split img {
+  width: 50%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.split .text {
+  flex: 1;
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== CTA ===== */
+.cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: #111827;
+  color: white;
+}
+
+/* ===== ANIMATION BASE ===== */
+.fade-up,
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.fade-up {
+  transform: translateY(40px);
+}
+
+.fade-left {
+  transform: translateX(-60px);
+}
+
+.fade-right {
+  transform: translateX(60px);
+}
+
+/* SHOW */
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* ===== PARALLAX EFFECT ===== */
+.hero-content {
+  animation: fadeHero 1.2s ease;
+}
+
+@keyframes fadeHero {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .split {
+    flex-direction: column;
+  }
+
+  .split img {
+    width: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+.weather-card {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.weather-card h2 {
+  margin-bottom: 15px;
+}
+
+.weather-main {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.weather-desc {
+  color: var(--text);
+  margin: 10px 0;
+}
+
+.weather-tip {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* dark mode */
+.dark .weather-tip {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.weather-card {
+  margin: 40px auto;
+  padding: 25px;
+  max-width: 600px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* PREVIEW */
+.weather-preview {
+  margin-top: 15px;
+}
+
+.weather-temp {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.weather-desc {
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.weather-icon {
+  width: 60px;
+}
+
+/* LINK */
+.weather-link {
+  margin-top: 10px;
+  font-size: 13px;
+  opacity: 0.7;
+}

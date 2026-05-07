@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dish Quiz</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="quiz.css" />
+    <script defer src="../components/header.js"></script>
+    <script type="module" src="quiz.js"></script>
+  </head>
+  <body>
+    <div id="header-container"></div>
+
+    <main class="quiz-container">
+      <div class="progress">
+        <div id="progress-bar"></div>
+      </div>
+
+      <div id="quiz-box" class="fade">
+        <img id="quiz-img" src="../assets/restaurant.jpg" />
+
+        <h2 id="question"></h2>
+        <div id="options"></div>
+      </div>
+
+      <div id="result" class="hidden result-card fade">
+        <h2>Your Dish 🍽️</h2>
+
+        <img id="result-img" />
+
+        <h3 id="dish-name"></h3>
+        <p id="dish-desc"></p>
+
+        <button id="restart-btn">Try Again</button>
+      </div>
+    </main>
+  </body>
+</html>

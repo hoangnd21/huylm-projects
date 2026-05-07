@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Finance Tracker</title>
+   <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="finance.css" />
+    <script defer src="../components/header.js"></script>
+    <script defer src="finance.js"></script>
+</head>
+
+<body>
+
+<div id="header-container"></div>
+<div class="container">
+  <div class="top-bar">
+    <h1>🍽 Restaurant Finance</h1>
+  </div>
+
+  <div class="grid">
+    <!-- ADD CUSTOMER -->
+    <div class="card">
+      <h3>Add Customer</h3>
+      <input id="name" placeholder="Name">
+      <input id="food" placeholder="Food">
+      <input id="price" type="number" placeholder="Price">
+      <input id="paid" type="number" placeholder="Paid">
+
+      <!-- NEW: STAFF SELECT -->
+      <select id="staffSelect"></select>
+
+      <button id="addBtn">Add Customer</button>
+    </div>
+
+    <!-- PAYROLL -->
+    <div class="card">
+      <h3>Employees (Payroll)</h3>
+      <input id="employees" type="number" placeholder="Number of employees">
+      <input id="wage" type="number" placeholder="Wage per employee">
+    </div>
+  </div>
+
+  <!-- CUSTOMER LIST -->
+  <div class="card">
+    <h3>Customer List</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Food</th>
+          <th>Price</th>
+          <th>Paid</th>
+          <th>Staff</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+  <!-- EMPLOYEE STATS -->
+  <div class="card">
+    <h3>Employee Statistics</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Employee</th>
+          <th>Total Collected</th>
+        </tr>
+      </thead>
+      <tbody id="employeeStats"></tbody>
+    </table>
+  </div>
+
+  <!-- TOTALS -->
+  <div class="grid totals-grid">
+    <div class="card stat">
+      <p>Revenue</p>
+      <h2 id="revenue">0</h2>
+    </div>
+
+    <div class="card stat">
+      <p>Paid</p>
+      <h2 id="paidTotal">0</h2>
+    </div>
+
+    <div class="card stat">
+      <p>Payroll</p>
+      <h2 id="payroll">0</h2>
+    </div>
+
+    <div class="card stat highlight">
+      <p>Profit</p>
+      <h2 id="profit">0</h2>
+    </div>
+  </div>
+
+
+</body>
+</html>

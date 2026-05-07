@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="weather.css" />
+    <script defer src="../components/header.js"></script>
+    <script defer src="weather.js"></script>
+  </head>
+  <body>
+    <div id="header-container"></div>
+
+    <main class="main-content">
+      <div class="search-box wide">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search city... (Press Enter)"
+        />
+      </div>
+
+      <div class="top-grid">
+        <div class="weather-card main-card">
+          <h2 class="city-name">--</h2>
+          <p class="weather-state">--</p>
+
+          <img class="weather-icon" src="" alt="" />
+          <div class="temperature">--°C</div>
+        </div>
+
+        <div class="weather-card info-card">
+          <div class="item">
+            <span>🌅 Sunrise</span>
+            <p class="sunrise">--</p>
+          </div>
+          <div class="item">
+            <span>🌇 Sunset</span>
+            <p class="sunset">--</p>
+          </div>
+          <div class="item">
+            <span>💧 Humidity</span>
+            <p><span class="humidity">--</span>%</p>
+          </div>
+          <div class="item">
+            <span>🌬 Wind</span>
+            <p><span class="wind-speed">--</span> km/h</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="weather-card">
+        <h3>Today (Hourly)</h3>
+        <div class="forecast-list" id="hourly"></div>
+      </div>
+
+      <div class="weather-card">
+        <h3>7-Day Forecast</h3>
+        <div class="forecast-list" id="daily"></div>
+      </div>
+
+      <div class="weather-card">
+        <h3>🍽 Food Suggestion</h3>
+        <p id="food-tip">--</p>
+      </div>
+    </main>
+
+  Z
+  </body>
+</html>
